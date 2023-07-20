@@ -412,6 +412,7 @@ button:focus {
 }
 
 .footer-body {
+  z-index: 1;
   text-align: center !important;
 }
 
@@ -740,4 +741,3 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
-

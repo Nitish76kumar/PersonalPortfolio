@@ -4,16 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { useEffect } from "react";
-import ReactGA from "react-ga";
 
 function Home() {
-
-  useEffect(() => {
-    
-    ReactGA.pageview(window.location.pathname)
-  }, []);
-
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -30,7 +22,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> HITENKUMAR PATEL</strong>
+                <strong className="main-name"> Nitish Kumar</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -47,13 +39,9 @@ function Home() {
               />
             </Col>
           </Row>
-
-
-
         </Container>
       </Container>
       <Home2 />
-
     </section>
   );
 }
