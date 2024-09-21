@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import zomato from "../../Assets/Projects/Project1.png";
+import StudyNotion from "../../Assets/Projects/Project1.png";
+import movie from "../../Assets/Projects/movie.png";
+import Ecommerce from "../../Assets/Projects/E-commerce.png";
 import pass from "../../Assets/Projects/Project2.png";
-import chair from "../../Assets/Projects/Project3.png";
 import port from "../../Assets/Projects/Project4.png";
 import imdb from "../../Assets/Projects/Project5.png";
 import weather from "../../Assets/Projects/Project6.png";
@@ -26,12 +27,46 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={zomato}
+              imgPath={StudyNotion}
               isBlog={false}
-              title="Zomato-Clone"
-              description="This is a Zomato home page clone website using HTML and CSS. Flexbox and Grid is used to structure the page. Not every content is added, some similar content I have skipped and focused on the stucture of the home page for practise."
-              ghLink="https://github.com/Nitish76kumar/zomato-clone"
-              demoLink="https://nitish76kumar.github.io/zomato-clone/"
+              title="StudyNotion"
+              description="StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
+"
+              ghLink="https://github.com/Nitish76kumar/StudyNotion"
+              demoLink="https://study-notion-seven-flax.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={movie}
+              isBlog={false}
+              title="Movie Explorer System"
+              description="This Movie Explorer System using React.js can provide users with a seamless and interactive interface to search, browse, and discover movies. By integrating API data, filtering, and responsive design, it offers a modern and scalable way to explore a vast movie collection."
+              ghLink="https://github.com/Nitish76kumar/Movie-Explorer-System"
+              demoLink="https://movie-explorer-system.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={weather}
+              isBlog={false}
+              title="WEATHER APP"
+              description="Created a Weather App that displays the current weather condition. This app is made with the help of Html, CSS, and JavaScript and is mobile responsive as well."
+              ghLink="https://github.com/Nitish76kumar/WeatherApp-using-JS"
+              demoLink="https://nitish76kumar.github.io/WeatherApp-using-JS/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ecommerce}
+              isBlog={false}
+              title=" E-commerce Website "
+              description="An eCommerce Website using the MERN stack involves building a full-fledged online store with MongoDB, Express.js, React.js, and Node.js. This setup allows for a robust, scalable, and high-performance platform where users can browse products, manage their carts, place orders, and make payments."
+              ghLink="https://github.com/Nitish76kumar/E-commerce-QuadB-"
+              demoLink="https://github.com/Nitish76kumar/E-commerce-QuadB-"
             />
           </Col>
 
@@ -46,17 +81,6 @@ function Projects() {
               .....🔒This project lets you generate secure passwords with various options."
               ghLink="https://github.com/Nitish76kumar/Random-Password-Generator-using-Javascript"
               demoLink="https://random-password-generator-using-javascript.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chair}
-              isBlog={false}
-              title=" 𝐌𝐨𝐝𝐞𝐫𝐧 𝐂𝐡𝐚𝐢𝐫 Website "
-              description="Here is my 𝐌𝐨𝐝𝐞𝐫𝐧 𝐂𝐡𝐚𝐢𝐫 Website Making With the help of 𝐇𝐓𝐌𝐋+𝐂𝐒𝐒 Used in 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧"
-              ghLink="https://github.com/Nitish76kumar/Modern-Chair"
-              demoLink="https://nitish76kumar.github.io/Modern-Chair/"
             />
           </Col>
 
@@ -83,16 +107,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={weather}
-              isBlog={false}
-              title="WEATHER APP"
-              description="Created a Weather App that displays the current weather condition. This app is made with the help of Html, CSS, and JavaScript and is mobile responsive as well."
-              ghLink="https://github.com/Nitish76kumar/WeatherApp-using-JS"
-              demoLink="https://nitish76kumar.github.io/WeatherApp-using-JS/"
-            />
-          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={rozarpay}
